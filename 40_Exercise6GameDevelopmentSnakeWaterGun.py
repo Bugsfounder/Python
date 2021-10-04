@@ -138,3 +138,5 @@ while i < 10:
     i += 1
 
 scoreCalculate(userInput)
+
+# CODED BY BUGS
