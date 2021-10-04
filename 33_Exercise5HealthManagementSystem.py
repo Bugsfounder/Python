@@ -1,7 +1,5 @@
 # Exercise 5: Health Management System
 # 3 CLIENTS: HARRY, KAUSHAL, ARYAN
-
-
 # TOTAL 6 FILES TO CREATE THAT STORE THE DIET LOG AND EXERCISE LOG FOR PER USER THREE USER 3 DIET LOG FILE AND THREE EXERCISE LOG FILE
 # WRITE A FUNCTION THAT WHEN EXECUTED TAKES AS INPUT CLIENT NAME
 # ONE MORE FUNCTION TO RETRIEVE EXCERCISE OR FOOD FOR ANY CLIENT
@@ -29,10 +27,12 @@ def logDetail(name, catUser, date, alreadyUserOrNot, logOrRet):
                 f = open(name + catUser + ".txt")
                 print("Here is the all diets of", name)
                 print(f.read())
+                f.close()
             elif catUser.lower() == "exercise":
                 f = open(name + catUser + ".txt")
                 print("Here is the all exercise of", name)
                 print(f.read())
+                f.close()
             else:
                 print("Check the spelling")
         elif (alreadyUserOrNot == '1' or alreadyUserOrNot.lower() == 'yes') and (logOrRet.lower() == "log"):
@@ -42,12 +42,14 @@ def logDetail(name, catUser, date, alreadyUserOrNot, logOrRet):
                 d = str(date)
                 f.write("[" + d + "] " + newLog + "\n")
                 print("New log added to user ", name, "to", catUser)
+                f.close()
             elif catUser.lower() == "exercise":
                 newLog = input("Add new log of Exercise: ")
                 f = open(name + catUser + ".txt", "a+")
                 d = str(date)
                 f.write("[" + d + "] " + newLog + "\n")
                 print("New log added to user ", name, "to", catUser)
+                f.close()
             else:
                 print("Check the spelling")
         elif (alreadyUserOrNot == '0' or alreadyUserOrNot.lower() == 'no') and (logOrRet.lower() == "log"):
@@ -57,12 +59,14 @@ def logDetail(name, catUser, date, alreadyUserOrNot, logOrRet):
                 d = str(date)
                 f.write("[" + d + "] " + newLog + "\n")
                 print("New log added to user ", name, "to", catUser)
+                f.close()
             elif catUser.lower() == "exercise":
                 newLog = input("Add First log of Exercise: ")
                 f = open(name + catUser + ".txt", "w+")
                 d = str(date)
                 f.write("[" + d + "] " + newLog + "\n")
                 print("New log added to user ", name, "to", catUser)
+                f.close()
             else:
                 print("Check the spelling")
         else:
