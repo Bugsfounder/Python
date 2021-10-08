@@ -24,7 +24,7 @@ data2 = {
 
 jscomp = json.dumps(data2)
 print(jscomp)
-formatted = json.dumps(data2, indent=4, sort_keys=True)
-print(formatted)
 
 # Task-2: what is sort_keys parameter in dump
+formatted = json.dumps(data2, indent=4, sort_keys=True)
+print(formatted)

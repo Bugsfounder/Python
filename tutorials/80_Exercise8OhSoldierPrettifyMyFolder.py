@@ -6,37 +6,23 @@
 # naam kuchh bhi ho jaise :- sd.jpg, cd.jpg etc in sabhi to as a counting numbers 1.jpg, 2.jpg karna hai
 
 # def solder("c://", "harry.txt", "jpg"):
+
 import os
 
 
-def solder(path, filename, extension):
-    pass
+def soldier(path, file, formate):
+    os.chdir(path)
+    i = 1
+    files = os.listdir(path)
+    with open(file) as f:
+        filelist = f.read().split("\n")
+
+    for file in files:
+        if file not in filelist:
+            os.rename(file, file.capitalize())
+        if os.path.splitext(file)[1] == formate:
+            os.rename(file, f"{i}{formate}")
+            i += 1
 
 
-path = "TestFile/"
-filename = "TestFile/nodel.txt"
-extension = ".jpg"
-
-# print(os.listdir(path))
-allFiles = os.listdir(path)
-f = open("TestFile/nodel.txt")
-allContent = f.read()
-f.close()
-notToChange = allContent.split("\n")
-os.chdir("TestFile")
-for i in allFiles:
-    fName = i.split(".")[0]
-    ext = i.split(".")[1]
-    print(fName, ext)
-    # for nFile in notToChange:
-    j = 0
-    # while j in range(len(notToChange)):
-    try:
-        if fName != ext:
-            os.rename((fName + "." + ext), (fName).capitalize())
-
-        if ext == "jpg" or fName != ext:
-            j += 1
-            os.rename((fName + "." + ext), (str(j)))
-    except Exception as error:
-        print(error)
+soldier(r"F:\tezt", r"F:\Programming and Cyber Security\Programming\Python\Python\tutorials\nodel.txt", ".txt")
