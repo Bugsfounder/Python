@@ -1,0 +1,7 @@
+licence.txt
+setup.py
+packagemanisha/__init__.py
+packagemanisha.egg-info/PKG-INFO
+packagemanisha.egg-info/SOURCES.txt
+packagemanisha.egg-info/dependency_links.txt
+packagemanisha.egg-info/top_level.txt
