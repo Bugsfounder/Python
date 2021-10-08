@@ -1,0 +1,17 @@
+EMAIL-1: tata@tata.co.uk
+EMAIL-2: northamerica@tata.com
+EMAIL-3: harry@codewithharry.com
+EMAIL-4: bugsfounder2021@gmail.com
+EMAIL-5: bugs@bugsfounder.com
+EMAIL-6: Email:enquiry@alliance.edu.in
+EMAIL-7: vc@alliance.edu.in
+EMAIL-8: anubha@alliance.edu.in
+EMAIL-9: registrar@alliance.edu.in
+EMAIL-10: registrar.exams@alliance.edu.in
+EMAIL-11: placement@alliance.edu.in
+EMAIL-12: mathew.t@alliance.edu.in
+EMAIL-13: rajen.chatterjee@alliance.edu.in
+EMAIL-14: abhay.chebbi@alliance.edu.in
+EMAIL-15: hrd@alliance.edu.in
+EMAIL-16: edu.verify@alliance.edu.in
+EMAIL-17: enquiry@alliance.edu.in

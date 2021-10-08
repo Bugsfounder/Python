@@ -25,8 +25,11 @@ class Library:
             print(book)
 
     def lendBook(self, bookName, userName):
-        self.lendedBook[userName] = bookName
-        self.listOfBooks.remove(bookName)
+        if bookName not in self.lendedBook.keys():
+            self.lendedBook[userName] = bookName
+            self.listOfBooks.remove(bookName)
+        else:
+            print("Book already has been booked by someone")
 
     def lendBooks(self, userName, *listOfBook):
         self.lendedBook[userName] = listOfBook
@@ -53,16 +56,17 @@ book = ["Book1", "Book2", "Book3", "Book4", "Book5"]
 manishaLibrary = Library("ManishaLibrary", *book)
 try:
     val = True
+    userName = input("Enter your name:- ")
+    print(f"Welcome {userName} to {manishaLibrary.libraryName} \n")
     while True:
-        userName = input("Enter your name:- ")
 
-        user_input = eval(input(f"Welcome {userName} to {manishaLibrary.libraryName} \n"
-                                f"Enter (1) To display books we have\n"
-                                f"Enter (2) To donate a book \n"
-                                f"Enter (3) To Lend a book\n"
-                                f"Enter (4) To return a book\n"
-                                f"Enter (5) For exit"
-                                f":- "))
+        user_input = eval(input(
+            f"Enter (1) To display books we have\n"
+            f"Enter (2) To donate a book \n"
+            f"Enter (3) To Lend a book\n"
+            f"Enter (4) To return a book\n"
+            f"Enter (q) For exit"
+            f":- "))
 
         if user_input == 1:
             manishaLibrary.displayBooks()
@@ -77,10 +81,11 @@ try:
 
         elif user_input == 4:
             bookName = input("Enter Book Name: ")
+            userName = input("Enter Your Name: ")
             manishaLibrary.returnBook(userName, bookName)
             print("Book Returned")
 
-        elif user_input == 5:
+        elif user_input == 'q':
             exitOrNot = input("Enter q for Exit: ")
             break
         else:
