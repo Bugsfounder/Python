@@ -1,4 +1,4 @@
-# PYTHON PRACTICE PROBLEM 6 (15 POINTS)
+# PYTHON PRACTICE PROBLEM 6 (EASY, 15 POINTS)
 # Problem Statement:-
 # Generate a random integer from a to b. You and your friends have to guess a number between two numbers, a and
 # b. a and b are inputs taken from the user. Your friend is player 1 and plays first. He will have to keep

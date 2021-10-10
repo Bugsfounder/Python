@@ -1,4 +1,4 @@
-# PYTHON PRACTICE PROBLEM 5 (15 POINTS)
+# PYTHON PRACTICE PROBLEM 5 (EASY, 15 POINTS)
 # Palindromify The List
 
 # You have given a list which contains some numbers, You have to print a list of next

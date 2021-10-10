@@ -5,7 +5,7 @@ Purpose: Practice Problem of Python
 """
 
 
-# PYTHON PRACTICE PROBLEM 4 (15 POINTS)
+# PYTHON PRACTICE PROBLEM 4 (EASY, 15 POINTS)
 # The Next Palindrome
 
 # A palindrome is a string which when reversed is equal to itself:
